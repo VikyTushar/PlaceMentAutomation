@@ -1,0 +1,346 @@
+* {
+	padding:0;
+	margin:0;
+	outline:0;
+}
+#bg { 
+background: url(../images/bg_1.jpg) no-repeat center top;
+}
+
+body {
+	color: #333;
+	font: 0.8em Arial, Verdana, Tahoma,Sans-Serif;
+	padding: 0px;
+	background: #f4f4f4 url(../images/bgtile.jpg) repeat-x;
+	/*background: #eee;*/
+}
+img {
+	border: 0; 
+}
+.clear { 
+	clear: both; 
+}
+.line {
+	clear: both;
+	padding: 15px 0 0;
+	margin: 0 0 25px;
+	border-bottom: 1px solid #ddd;
+}
+/* content holder */
+.wrap { 
+	margin: 0px auto; 
+	width: 960px;
+}
+
+
+/* menu */
+#mainmenu { 
+	float: right; 
+	padding: 39px 0 0; 
+}
+#menu ul { 
+	float: right; 
+}
+#menu li { 
+	display: inline; 
+	float: left; 
+	margin: 0 0 0 18px; 
+}
+#menu li a { 
+	display: block; 
+	color: #999; 
+	padding: 7px; 
+	font-size: 1.1em; 
+	border: 1px solid transparent; 
+}
+#menu a:hover, #menu li.current a { 
+	border-color: #444;  
+}
+#menu li ul { 
+	top: 98px;
+	background: url(../.images/dot.png); 
+	padding: 3px;
+	font-size: .92em; 
+	position: absolute; 
+	display: none; 
+	z-index: 100; 	
+}
+#menu li ul li { 
+	float: none; 
+	display: inline; 
+	margin: 0; 
+	padding: 0; 
+	clear: left;
+}
+
+#menu li ul li a { 
+	color: #fff;
+	margin: 4px; 
+	white-space: nowrap;
+	padding: 8px;	
+}
+#menu li ul li a:hover {
+	background: #2C2D2F;
+	border-color: #2C2D2F;
+}
+/* home page bits */
+/* pitch slideshow */
+#pitch { 
+	clear: both; 
+	height: 296px; 
+	background: url(../.images/shadow.png) no-repeat left bottom;
+	margin: 0 0 25px;
+}
+#slideshow {
+    position:relative;
+    height: 310px;
+}
+#slideshow img {
+	float: left;
+}
+#slideshow div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8;
+}
+#slideshow div.active {
+    z-index: 10;
+}
+#slideshow div.last-active {
+    z-index: 9;
+}
+
+#zoom { 
+	z-index: 11; 
+}
+
+/* pitch overlay */
+.overlay {
+	clear: both;
+	float: left; 
+	z-index: 100;
+	position: relative; 
+	margin: 100px 0 0; 
+}
+.overlay h2{ 
+	color: #fff; 
+	font-size: 2em;
+	background: url(../.images/dot.png);
+	padding: 16px;
+	margin: 0;
+	float: left;
+	width: 300px;
+}
+.overlay p {
+	clear: both;
+	background: #fff;
+	padding: 16px;
+	width: 300px;
+}
+
+/* inner pitch */
+#inner-pitch {
+	clear: both;
+}
+#inner-pitch .overlay {
+	margin: 0;
+	width: 920px;
+}
+
+h1 {
+	text-align: center;
+	padding: 20px 0 12px 0;
+	margin: 0;
+}
+h11 {
+	float: left; 
+	font-size: 2.1em; 
+	color: #fff;
+	letter-spacing: -1.4px;	
+	margin: 0 0 30px 0;
+	padding: 34px 0 0 10px;
+}
+h11 a { 
+	color: #fff;
+}
+h2 {
+	font-size: 16px;
+	text-align: center;
+	padding: 0 0 12px 0; 
+}
+#side{
+float:right;
+width:30%;
+}
+#container {
+	float:left;
+	box-shadow: 0 5px 10px -5px rgba(0,0,0,0.5);
+	position: relative;
+	background: white;
+	width:100%; 
+}
+
+table {
+	background-color: #F3F3F3;
+	border-collapse: collapse;
+	width: 100%;
+	margin: 15px 0;
+}
+
+th {
+	background-color: black;
+	color: #FFF;
+	cursor: pointer;
+	padding: 5px 10px;
+}
+
+th small {
+	font-size: 9px; 
+}
+
+td, th {
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+}
+
+td a {
+	color: #663300;
+	display: block;
+	padding: 5px 10px;
+}
+th a {
+	padding-left: 0
+}
+
+td:first-of-type a {
+	background: url(./.images/file.png) no-repeat 10px 50%;
+	padding-left: 35px;
+}
+th:first-of-type {
+	padding-left: 35px;
+}
+
+td:not(:first-of-type) a {
+	background-image: none !important;
+} 
+
+tr:nth-of-type(odd) {
+	background-color: #E6E6E6;
+}
+
+tr:hover td {
+	background-color:#CACACA;
+}
+
+tr:hover td a {
+	color: #000;
+}
+
+
+
+
+
+/* icons for file types (icons by famfamfam) */
+
+/* images */
+table tr td:first-of-type a[href$=".jpg"], 
+table tr td:first-of-type a[href$=".png"], 
+table tr td:first-of-type a[href$=".gif"], 
+table tr td:first-of-type a[href$=".svg"], 
+table tr td:first-of-type a[href$=".jpeg"]
+{background-image: url(./.images/image.png);}
+
+/* zips */
+table tr td:first-of-type a[href$=".zip"] 
+{background-image: url(./.images/zip.png);}
+
+/* css */
+table tr td:first-of-type a[href$=".css"] 
+{background-image: url(./.images/css.png);}
+
+/* docs */
+table tr td:first-of-type a[href$=".doc"],
+table tr td:first-of-type a[href$=".docx"],
+table tr td:first-of-type a[href$=".ppt"],
+table tr td:first-of-type a[href$=".pptx"],
+table tr td:first-of-type a[href$=".pps"],
+table tr td:first-of-type a[href$=".ppsx"],
+table tr td:first-of-type a[href$=".xls"],
+table tr td:first-of-type a[href$=".xlsx"]
+{background-image: url(./.images/office.png)}
+
+/* videos */
+table tr td:first-of-type a[href$=".avi"], 
+table tr td:first-of-type a[href$=".wmv"], 
+table tr td:first-of-type a[href$=".mp4"], 
+table tr td:first-of-type a[href$=".mov"], 
+table tr td:first-of-type a[href$=".m4a"]
+{background-image: url(./.images/video.png);}
+
+/* audio */
+table tr td:first-of-type a[href$=".mp3"], 
+table tr td:first-of-type a[href$=".ogg"], 
+table tr td:first-of-type a[href$=".aac"], 
+table tr td:first-of-type a[href$=".wma"] 
+{background-image: url(./.images/audio.png);}
+
+/* web pages */
+table tr td:first-of-type a[href$=".html"],
+table tr td:first-of-type a[href$=".htm"],
+table tr td:first-of-type a[href$=".xml"]
+{background-image: url(./.images/xml.png);}
+
+table tr td:first-of-type a[href$=".php"] 
+{background-image: url(./.images/php.png);}
+
+table tr td:first-of-type a[href$=".js"] 
+{background-image: url(./.images/script.png);}
+
+/* directories */
+table tr.dir td:first-of-type a
+{background-image: url(./.images/folder.png);}
+/* footer */
+#footer { 
+	clear: both; 
+	color: #999; 
+	background: url(../images/footertile.jpg) repeat-x;
+	font-size: 0.9em;
+}
+#footerbg {
+	padding: 35px 0 15px;
+	background: url(../.images/footer.jpg) no-repeat center top;
+}
+#footer p { 
+	margin: 0 0 12px;
+	padding: 6px 0;
+}
+#footer_menu {
+	float: right;
+	padding: 4px 0 0;
+}
+#footer a { 
+	color: #999; 
+	margin: 0 5px 0 0; 
+	padding: 6px 10px;
+	background: url(../.images/dot.png) no-repeat left center; 
+	border: 1px solid transparent;
+}
+#footer a:hover {
+	border-color: #555;
+}
+#fleft {
+	clear: both;
+	padding: 25px 0 0;
+	font-size: .94em;
+}
+
+#copy { 
+	color: #777; font-size: 1.5em; 
+}
+#copy span { 
+	color: #999; 
+}*
